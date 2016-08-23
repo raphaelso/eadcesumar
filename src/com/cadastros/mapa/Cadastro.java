@@ -52,18 +52,21 @@ public class Cadastro {
         System.out.println("Digite o curso: ");
         aluno.setCurso(entrada.nextLine());
         
+        System.out.println("\n*****************************************");
+        
+        
         System.out.println("\n**************IMPRESSÃO DE DADOS DO ALUNO***************");
         System.out.println(aluno.toString());
-        System.out.println("************FIM DA IMPRESSÃO DE DADOS DO ALUNO************\n");
+        System.out.println("**********************************************************\n");
         
         Principal.identificacao();
     }
-    
-    
+        
     public void professor(Scanner entrada) {
         Professor professor = new Professor();
         
         System.out.println("\n************CADASTRO DE PROFESSOR************");
+        
         System.out.println("Digite o nome: ");
         professor.setNome(entrada.nextLine());
         
@@ -110,8 +113,10 @@ public class Cadastro {
         System.out.println("Digite o salário: ");
         professor.setSalario(entrada.nextDouble());
         
+        System.out.println("\n*********************************************");
+        
         System.out.println("\n**************IMPRESSÃO DE DADOS DO PROFESSOR***************");
         System.out.println(professor.toString());
-        System.out.println("************FIM DA IMPRESSÃO DE DADOS DO PROFESSOR************\n");
+        System.out.println("**************************************************************\n");
     }
 }
